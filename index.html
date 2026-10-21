@@ -29,13 +29,6 @@
   .eyebrow{ font-family:'IBM Plex Mono',monospace; font-size:12.5px; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); }
   .eyebrow.on-navy{ color:var(--navy-ink-soft); }
   .lede{ font-size:18px; line-height:1.6; color:var(--ink-soft); max-width:640px; }
-  .tbc{ font-family:'IBM Plex Mono',monospace; font-size:.86em; font-weight:600; color:var(--amber); background:var(--amber-soft); border:1px solid var(--amber-line); border-radius:6px; padding:.08em .5em; white-space:normal; }
-
-  /* draft banner */
-  .draft-bar{ background:var(--amber-soft); border-bottom:1px solid var(--amber-line); }
-  .draft-bar .wrap{ display:flex; gap:14px; align-items:flex-start; padding-block:12px; }
-  .draft-bar strong{ color:var(--amber); font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.08em; text-transform:uppercase; flex:0 0 auto; padding-top:2px; }
-  .draft-bar p{ font-size:13.5px; color:var(--ink-soft); line-height:1.55; }
 
   /* nav */
   .nav{ position:sticky; top:0; z-index:40; background:color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
@@ -275,7 +268,6 @@
   .loc-chip{ background:none; }
   .contact-sec{ background:var(--paper); border-top:1px solid var(--line); }
   .lead-card{ border-radius:16px; }
-  .draft-bar .wrap{ padding-block:8px; }
   /* ---- Brecken Health brand theme (matches breckenhealth.com.au) ---- */
   body{ font-family:'Outfit',system-ui,sans-serif; font-size:16px; }
   .eyebrow{ font-family:'Outfit',sans-serif; font-weight:600; font-size:12.5px; letter-spacing:.16em; color:var(--accent); }
@@ -349,8 +341,6 @@
     .hero-art, .art{ justify-self:start; max-width:360px; }
     .split{ margin-bottom:40px; }
   }
-
-  .draft-bar p{ font-size:12.5px; }
 
   /* Brecken marketing iconography: bold blue line icons, white cards on pale tint */
   .case,#capability{ background:#E6F2F2; }
@@ -523,15 +513,11 @@
         <h2>Completed studies</h2>
         <p class="lede">Our completed-study record and recruitment performance.</p>
       </div>
-      <div class="callout" style="margin-bottom:22px">
-        <div class="icon-badge" data-icon="alert"></div>
-        <div><h4>Placeholder rows</h4><p>Supply protocol, indication, study type, sponsor/CRO, sites, participant count and year. If a CDA restricts naming a sponsor, list indication and phase only.</p></div>
-      </div>
       <div class="tbl-wrap">
         <table>
           <thead><tr><th>Protocol</th><th>Indication</th><th>Study type</th><th>Sponsor / CRO</th><th>Sites</th><th>Participants</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>IC3</td><td>Liver cirrhosis detection / HCC surveillance</td><td>Implementation RCT</td><td>MRFF; UWA &amp; UniMelb</td><td>Multiple</td><td>630</td><td><span class="status-dot completed">Completed <span class="tbc">YYYY</span></span></td></tr>
+            <tr><td>IC3</td><td>Liver cirrhosis detection / HCC surveillance</td><td>Implementation RCT</td><td>MRFF; UWA &amp; UniMelb</td><td>Multiple</td><td>630</td><td><span class="status-dot completed">Completed</span></td></tr>
             <tr><td>POSEIDON</td><td>Inflammation in ASCVD, CKD &amp; HF</td><td>Observational</td><td>Novo Nordisk</td><td>Bunbury, Leschenault &amp; Busselton</td><td>150+</td><td><span class="status-dot completed">Completed Apr 2025</span></td></tr>
             <tr><td>Solexan™</td><td>Shingles pain &amp; lesion healing</td><td>Phase Ib</td><td>Wintermute Biomedical; SAPRO CRO</td><td>Bunbury</td><td>8</td><td><span class="status-dot completed">Completed 2025</span></td></tr>
             <tr><td>BinaxNOW™ COVID-19/Flu A&amp;B Combo</td><td>COVID-19 &amp; influenza A/B self-test</td><td>Device feasibility</td><td>Abbott Rapid Diagnostics</td><td>Bunbury</td><td>497</td><td><span class="status-dot completed">Completed Nov 2025</span></td></tr>
